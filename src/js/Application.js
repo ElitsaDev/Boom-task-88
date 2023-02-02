@@ -13,10 +13,10 @@ export default class Application extends EventEmitter {
         this.emit(Application.events.READY);
         
     }
-    
+
     init() {
         this.article = document
-        .getElementsByClassName("article")
+        .getElementsByClassName("article")[0]
         .addEventListener('click', () =>{
 
                 anime({
